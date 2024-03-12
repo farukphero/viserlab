@@ -18,89 +18,41 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
+
 
 import logo from "../../../../assets/image/logo-dark.png";
 import Image from "next/image";
 import { FaArrowRightToBracket } from "react-icons/fa6";
+import { navListMenuItemsForServices } from "./_components/NavListMenuItem";
+import Link from "next/link";
 
-const navListMenuItems = [
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
-  },
-  {
-    title: "About Us",
-    description: "Meet and learn about our dedication",
-    icon: UserGroupIcon,
-  },
-  {
-    title: "Blog",
-    description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
-  },
-  {
-    title: "Services",
-    description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
-  },
-  {
-    title: "Support",
-    description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
-  },
-  {
-    title: "Contact",
-    description: "Find the perfect solution for your needs.",
-    icon: PhoneIcon,
-  },
-  {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
-    icon: NewspaperIcon,
-  },
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: "Special Offers",
-    description: "Explore limited-time deals and bundles",
-    icon: TagIcon,
-  },
-];
+
+
+
+
+
+
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
+  const renderItems = navListMenuItemsForServices.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+      <Link href="/" key={key}>
+        <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
+          <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-[#0088FF]/50 w-6",
             })}
+
           </div>
-          <div>
+          <div className="hover:text-[#0088FF]">
             <Typography
               variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
+           
+              className="flex items-center text-sm font-bold "
             >
               {title}
             </Typography>
@@ -112,7 +64,7 @@ function NavListMenu() {
             </Typography>
           </div>
         </MenuItem>
-      </a>
+      </Link>
     )
   );
 
@@ -163,22 +115,23 @@ function NavListMenu() {
 function NavListMenuProducts() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
+  const renderItems = navListMenuItemsForServices.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+      <Link href="/" key={key}>
+        <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
+          <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-[#0088FF]/50 w-6",
             })}
+
           </div>
-          <div>
+          <div className="hover:text-[#0088FF]">
             <Typography
               variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
+           
+              className="flex items-center text-sm font-bold "
             >
               {title}
             </Typography>
@@ -190,7 +143,7 @@ function NavListMenuProducts() {
             </Typography>
           </div>
         </MenuItem>
-      </a>
+      </Link>
     )
   );
 
@@ -241,22 +194,23 @@ function NavListMenuProducts() {
 function NavListMenuWeb() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
+  const renderItems = navListMenuItemsForServices.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+      <Link href="/" key={key}>
+        <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
+          <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-[#0088FF]/50 w-6",
             })}
+
           </div>
-          <div>
+          <div className="hover:text-[#0088FF]">
             <Typography
               variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
+           
+              className="flex items-center text-sm font-bold "
             >
               {title}
             </Typography>
@@ -268,7 +222,7 @@ function NavListMenuWeb() {
             </Typography>
           </div>
         </MenuItem>
-      </a>
+      </Link>
     )
   );
 
@@ -319,34 +273,35 @@ function NavListMenuWeb() {
 function NavListMenuDM() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
+  const renderItems = navListMenuItemsForServices.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
+      <Link href="/" key={key}>
+      <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
+        <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
+          {" "}
+          {React.createElement(icon, {
+            strokeWidth: 2,
+            className: "h-6 text-[#0088FF]/50 w-6",
+          })}
+
+        </div>
+        <div className="hover:text-[#0088FF]">
+          <Typography
+            variant="h6"
+         
+            className="flex items-center text-sm font-bold "
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="paragraph"
+            className="text-xs !font-medium text-blue-gray-500"
+          >
+            {description}
+          </Typography>
+        </div>
+      </MenuItem>
+    </Link>
     )
   );
 
@@ -405,7 +360,9 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-800 text-[15px]">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-800 text-[15px]">
+          Home
+        </ListItem>
       </Typography>
       <Typography
         as="a"
@@ -414,36 +371,65 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-800 text-[15px]">About</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-800 text-[15px]">
+          About
+        </ListItem>
       </Typography>
       <NavListMenu />
       <NavListMenuProducts />
       <NavListMenuWeb />
       <NavListMenuDM />
-      
     </List>
   );
 }
 
 export function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
+  const [changeBgColor, setChangeBgColor] = React.useState(false);
+
+  // React.useEffect(() => {
+  //   window.addEventListener(
+  //     "resize",
+  //     () => window.innerWidth >= 960 && setOpenNav(false)
+  //   );
+  // }, []);
+  const handleOpenNav = ()=>{
+    setOpenNav(!openNav)
+    setChangeBgColor(!changeBgColor)
+  }
+
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
-  }, []);
+    function handleResize() {
+      if (window.innerWidth >= 960) {
+        setChangeBgColor(false);
+        setOpenNav(false);
+      }
+    }
 
+    window.addEventListener("resize", handleResize);
+
+    // Call handleResize on initial render
+    handleResize();
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
-    <section className="w-full shadow-none py-4">
+    <section
+      className={
+        changeBgColor
+          ? "w-full bg-white shadow-none py-4"
+          : "w-full shadow-none py-4"
+      }
+    >
       <div className="flex items-center justify-between text-blue-gray-900 lg:w-[85%] mx-5 lg:mx-auto">
         <Image src={logo} alt="logo" className="w-[225px] h-[54px]" />
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-        <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-4 px-8 rounded text-white font-medium   flex gap-x-2">
+          <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-4 px-8 rounded text-white font-medium   flex gap-x-2">
             <FaArrowRightToBracket className="h-4 w-4 mt-1" />{" "}
             <span className="text-sm">MY ACCOUNT</span>
           </button>
@@ -452,24 +438,35 @@ export function NavBar() {
           variant="text"
           color="blue-gray"
           className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
+          onClick={handleOpenNav}
         >
           {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            <XMarkIcon
+              
+              className="h-6 w-6"
+              strokeWidth={2}
+            />
           ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            <Bars3Icon
+              
+              className="h-6 w-6"
+              strokeWidth={2}
+            />
           )}
         </IconButton>
       </div>
-      <Collapse open={openNav}>
-        <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-4 px-8 rounded text-white font-medium   flex gap-x-2">
-            <FaArrowRightToBracket className="h-4 w-4 mt-1" />{" "}
-            <span className="text-sm">MY ACCOUNT</span>
-          </button>
-        </div>
-      </Collapse>
+      <div style={{ position: "relative" }} className="lg:hidden">
+        <Collapse open={openNav} className="z-50 absolute bg-white">
+          <NavList />
+          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden ml-2">
+            <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-4 px-8 rounded text-white font-medium   flex gap-x-2 mb-10">
+              <FaArrowRightToBracket className="h-4 w-4 mt-1" />{" "}
+              <span className="text-sm">MY ACCOUNT</span>
+            </button>
+          </div>
+        </Collapse>
+        {/* Rest of your home page content */}
+      </div>
     </section>
   );
 }

@@ -1,5 +1,9 @@
 import React from "react";
+import banner_tech1 from "../../../assets/image/banner-tech1.png";
 import banner_tech2 from "../../../assets/image/banner-tech2.png";
+import banner_tech3 from "../../../assets/image/banner-tech3.png";
+import banner_tech4 from "../../../assets/image/banner-tech4.png";
+import banner_tech5 from "../../../assets/image/banner-tech5.png";
 import banner_tech6 from "../../../assets/image/banner-tech6.png";
 import Image from "next/image";
 
@@ -7,6 +11,18 @@ const Banner = () => {
   return (
     <div className="lg:w-[85%] lg:mx-auto mx-5">
       <div>
+        <div className="hidden lg:flex justify-between">
+          <Image
+            src={banner_tech1}
+            alt="banner_tech"
+            className="w-40 h-32 ml-20"
+          />
+          <Image
+            src={banner_tech4}
+            alt="banner_tech"
+            className="w-36 h-28 mr-7"
+          />
+        </div>
         <h1 className="text-[#0088FF] text-sm lg:text-lg font-bold text-center pb-5 pt-7 lg:pt-0 lg:pb-10">
           Looking for One Stop Solution Provider?
         </h1>
@@ -22,7 +38,7 @@ const Banner = () => {
             360 Degree Solution For Your Digital Business
           </p>
           <Image
-            src={banner_tech6}
+            src={banner_tech5}
             alt="banner_tech"
             className="w-36 h-28 hidden lg:flex"
           />
@@ -55,6 +71,18 @@ const Banner = () => {
           <span className="text-sm"> CONTACT US</span>
         </button>
       </div>
+      <div className="hidden lg:flex justify-between mb-16">
+          <Image
+            src={banner_tech3}
+            alt="banner_tech"
+            className="w-40 h-32 hidden lg:flex ml-20"
+          />
+          <Image
+            src={banner_tech6}
+            alt="banner_tech"
+            className="w-36 h-28 hidden lg:flex mr-6"
+          />
+        </div>
     </div>
   );
 };
