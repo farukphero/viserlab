@@ -1,11 +1,12 @@
 import Banner from "./_components/Banner";
+import BuildingTomorrows from "./_components/BuildingTomorrows";
 import { NavBar } from "./_components/NavBar/NavBar";
 
 export default function Home() {
   return (
     <div>
       <div
-        className="h-[500px] lg:h-screen   w-full bg-[#ecf6fe]  "
+        className="h-[440px] lg:h-screen   w-full bg-[#edf4f9]  "
         style={{
           backgroundImage: `url("https://viserlab.com/assets/images/shapes/banner-shape.png")`,
           backgroundSize: "cover",
@@ -17,6 +18,7 @@ export default function Home() {
           <Banner />
         </div>
       </div>
+      <BuildingTomorrows/>
     </div>
   );
 }
