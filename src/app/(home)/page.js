@@ -2,6 +2,7 @@ import Banner from "./_components/Banner";
 import BuildingTomorrows from "./_components/BuildingTomorrows";
 import FeaturedItems from "./_components/FeaturedItems";
 import { NavBar } from "./_components/NavBar/NavBar";
+import SolutionsPart from "./_components/SolutionsPart";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </div>
       <BuildingTomorrows/>
       <FeaturedItems/>
+      <SolutionsPart/>
     </div>
   );
 }

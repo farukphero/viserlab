@@ -11,15 +11,8 @@ import card2 from "../../../assets/image/featured image/29668217_cover.jpg";
 import card3 from "../../../assets/image/featured image/33575024_cover.jpg";
 import card4 from "../../../assets/image/featured image/33821085_cover.jpg";
 
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
-import { FaRegStar, FaStar } from "react-icons/fa6";
+import { Card, CardBody, Typography } from "@material-tailwind/react";
+import { FaStar } from "react-icons/fa6";
 
 const FeaturedItems = () => {
   const cards = [
