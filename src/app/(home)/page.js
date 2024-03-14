@@ -1,6 +1,7 @@
 import Banner from "./_components/Banner";
 import BuildingTomorrows from "./_components/BuildingTomorrows";
 import Empowering from "./_components/Empowering";
+import EmpoweringForPhone from "./_components/EmpoweringForPhone";
 import FeaturedItems from "./_components/FeaturedItems";
 import { NavBar } from "./_components/NavBar/NavBar";
 import SolutionsPart from "./_components/SolutionsPart";
@@ -25,7 +26,7 @@ export default function Home() {
       <FeaturedItems />
       <SolutionsPart />
       <Empowering />
-      <SolutionsPart />
+      <EmpoweringForPhone />
     </div>
   );
 }
