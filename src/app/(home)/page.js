@@ -1,5 +1,6 @@
 import Banner from "./_components/Banner";
 import BuildingTomorrows from "./_components/BuildingTomorrows";
+import FeaturedItems from "./_components/FeaturedItems";
 import { NavBar } from "./_components/NavBar/NavBar";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </div>
       <BuildingTomorrows/>
+      <FeaturedItems/>
     </div>
   );
 }
