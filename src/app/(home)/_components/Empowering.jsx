@@ -57,11 +57,11 @@ const Empowering = () => {
                   <Image
                     src={idea}
                     alt="idea"
-                    className="bg-blue-400 rounded-full h-12 w-12 p-3 absolute -top-28 ml-10"
+                    className="bg-[#42A5F5] rounded-full h-12 w-12 p-3 absolute -top-28 ml-10"
                   />
                 </div>
 
-                <div className="absolute -top-16  border-r border-blue-400 h-16 ml-16"></div>
+                <div className="absolute -top-16  border-r border-[#42A5F5] h-16 ml-16"></div>
                 <div
                   className={`font-bold ${
                     hoveredComponent === "idea" ? "text-[#42A5F5]" : ""
