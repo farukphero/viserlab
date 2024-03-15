@@ -1,6 +1,7 @@
 import Banner from "./_components/Banner";
 import BuildingTomorrows from "./_components/BuildingTomorrows";
 import EffectiveWork from "./_components/EffectiveWork";
+import EffectiveWorkForPhone from "./_components/EffectiveWorkForPhone";
 import Empowering from "./_components/Empowering";
 import EmpoweringForPhone from "./_components/EmpoweringForPhone";
 import FeaturedItems from "./_components/FeaturedItems";
@@ -29,7 +30,8 @@ export default function Home() {
       <Empowering />
       <EmpoweringForPhone />
       <EffectiveWork/>
-      <Empowering />
+      <EffectiveWorkForPhone/>
+      
     </div>
   );
 }
