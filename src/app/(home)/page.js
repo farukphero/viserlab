@@ -6,13 +6,15 @@ import Empowering from "./_components/Empowering";
 import EmpoweringForPhone from "./_components/EmpoweringForPhone";
 import FeaturedItems from "./_components/FeaturedItems";
 import { NavBar } from "./_components/NavBar/NavBar";
+import Remarkable from "./_components/Remarkable";
+import Satisfaction from "./_components/Satisfaction";
 import SolutionsPart from "./_components/SolutionsPart";
 
 export default function Home() {
   return (
     <div>
       <div
-        className="h-[440px] lg:h-screen   w-full bg-[#edf4f9]  "
+        className="h-[440px] lg:h-screen w-full bg-[#edf4f9]  "
         style={{
           backgroundImage: `url("https://viserlab.com/assets/images/shapes/banner-shape.png")`,
           backgroundSize: "cover",
@@ -29,9 +31,10 @@ export default function Home() {
       <SolutionsPart />
       <Empowering />
       <EmpoweringForPhone />
-      <EffectiveWork/>
-      <EffectiveWorkForPhone/>
-      
+      <EffectiveWork />
+      <EffectiveWorkForPhone />
+      <Remarkable />
+      <Satisfaction/>
     </div>
   );
 }
