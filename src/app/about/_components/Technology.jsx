@@ -15,7 +15,7 @@ import technology7 from "../../../assets/image/about/technology-7.svg";
 const Technology = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-[85%] lg:mx-auto mx-5 my-28 justify-center">
-      <div className="relative md:h-[580px] md:w-[580px]">
+      <div className="relative md:h-[580px] md:w-[580px] hidden lg:block">
         <Image src={shape} alt="shape" />
         <div>
           <Image
@@ -75,7 +75,7 @@ const Technology = () => {
       </div>
       <div className="h-full flex items-center">
         <div>
-          <h1 className="text-xl lg:text-[44px] font-bold">
+          <h1 className="text-2xl lg:text-[44px] font-bold">
             Our Technology Stack
           </h1>
           <p className="lg:text-xl pt-7 pb-10 text-gray-700">
@@ -117,6 +117,64 @@ const Technology = () => {
               </span>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="relative md:h-[580px] md:w-[580px] lg:hidden">
+        <Image src={shape} alt="shape" />
+        <div>
+          <Image
+            src={favicon}
+            alt="favicon"
+            className="h-20 w-20 absolute top-[40%] lg:top-[43%] left-[41%]"
+          />
+          <div className="bg-white rounded-full  p-3 absolute top-[28%] lg:top-[178px] left-[10%]">
+            <Image src={html} alt="favicon" className="h-7 w-7 lg:h-8 lg:w-8" />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute  top-10 lg:top-14 left-[26%]">
+            <Image
+              src={apple}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute top-10 lg:top-14 right-[30%] lg:right-[33%]">
+            <Image src={dm} alt="favicon" className="h-8 w-8 lg:h-10 lg:w-10" />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute top-[28%] lg:top-[30%] right-[10%] lg:right-[14%]">
+            <Image
+              src={elephant}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute bottom-[28%] lg:bottom-[31%] right-[10%] lg:right-[14%]">
+            <Image
+              src={technology4}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute bottom-[28%] lg:bottom-[31%] left-[9%]">
+            <Image
+              src={technology7}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute bottom-9 lg:bottom-16 left-[28%]">
+            <Image
+              src={technology6}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
+          <div className="bg-white rounded-full  p-3 absolute  bottom-9 lg:bottom-16 right-[30%] lg:right-[33%]">
+            <Image
+              src={technology5}
+              alt="favicon"
+              className="h-8 w-8 lg:h-10 lg:w-10"
+            />
+          </div>
         </div>
       </div>
     </div>

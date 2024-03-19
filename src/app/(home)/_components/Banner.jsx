@@ -6,6 +6,7 @@ import banner_tech4 from "../../../assets/image/banner-tech4.png";
 import banner_tech5 from "../../../assets/image/banner-tech5.png";
 import banner_tech6 from "../../../assets/image/banner-tech6.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -64,12 +65,16 @@ const Banner = () => {
       </div>
 
       <div className="flex justify-center gap-x-5">
-        <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-3 lg:py-4 px-5 lg:px-8 rounded text-white font-medium   flex gap-x-2">
+       <Link href="/product">
+       <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-3 lg:py-4 px-5 lg:px-8 rounded text-white font-medium   flex gap-x-2">
           <span className="text-sm"> EXPLORE US</span>
         </button>
+       </Link>
+        <Link href="/contact">
         <button className="hover:bg-[#0088FF] bg-[#ecf6fe] transition duration-700 ease-in-out  text-[#0088FF]  border  border-[#0088FF] py-3 lg:py-4 px-5 lg:px-8 rounded hover:text-white font-medium   flex gap-x-2">
           <span className="text-sm"> CONTACT US</span>
         </button>
+        </Link>
       </div>
       <div className="hidden lg:flex justify-between mb-16">
           <Image
