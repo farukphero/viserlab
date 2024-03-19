@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import {
-  Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
   List,
   ListItem,
@@ -359,9 +357,8 @@ function NavList() {
           Home
         </ListItem>
       </Typography>
-      <Typography
-        as="a"
-        href="#"
+      <Link
+        href="/about"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -369,7 +366,7 @@ function NavList() {
         <ListItem className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-800 text-[15px]">
           About
         </ListItem>
-      </Typography>
+      </Link>
       <NavListMenu />
       <NavListMenuProducts />
       <NavListMenuWeb />
