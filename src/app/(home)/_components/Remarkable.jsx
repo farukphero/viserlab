@@ -1,18 +1,35 @@
 import Image from "next/image";
 import React from "react";
 import shape from "../../../assets/image/effective-work/wave-shape.png";
-
+import circle1 from "../../../assets/image/remarkable/achievement-1.svg";
+import circle2 from "../../../assets/image/remarkable/achievement-2.svg";
+import circle3 from "../../../assets/image/remarkable/achievement-3.svg";
+import circle4 from "../../../assets/image/remarkable/achievement-4.svg";
+import circle5 from "../../../assets/image/remarkable/achievement-5.svg";
+import circle6 from "../../../assets/image/remarkable/achievement-6.svg";
+import circle7 from "../../../assets/image/remarkable/achievement-7.svg";
+import circle8 from "../../../assets/image/remarkable/achievement-8.svg";
+import circle9 from "../../../assets/image/remarkable/achievement-9.svg";
+import circle10 from "../../../assets/image/remarkable/achievement-10.svg";
+import circle11 from "../../../assets/image/remarkable/achievement-11.svg";
+import circle12 from "../../../assets/image/remarkable/achievement-12.svg";
+import circle13 from "../../../assets/image/remarkable/achievement-13.svg";
+ 
 const Remarkable = () => {
   return (
     <div
-      className="h-screen w-full bg-[#0088FF] mt-28 relative"
+      className="h-[450px] lg:h-screen w-full bg-[#0088FF] mt-28 relative"
       style={{
         backgroundImage: `url("https://viserlab.com/assets/images/shapes/our-achievement-bg.png")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <Image src={shape} alt="" className="absolute bottom-0 border-none outline-none shadow-none" />
+      <Image
+        src={shape}
+        alt=""
+        className="absolute bottom-0 border-none outline-none shadow-none"
+      />
       <div className="mt-20 lg:mt-0 lg:my-20 lg:w-[85%] lg:mx-auto mx-5">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="lg:w-9/12 pt-20">
@@ -29,19 +46,66 @@ const Remarkable = () => {
               Contact us
             </button>
           </div>
-          <div className="lg:w-9/12 h-[360px] lg:h-[30rem] mt-16">
+          <div className="lg:w-9/12 h-[360px] lg:h-[30rem] mt-16 hidden lg:block">
             <div className="bg-[#1A94FF] rounded-full h-full w-full p-10 relative">
-              <div className="bg-[#33A0FF] rounded-full h-full w-full ">
-                
+              <div className="bg-[#33A0FF] rounded-full h-full w-full "></div>
+              <div className="circleIcon">
+                <Image src={circle1} alt="circle" />
               </div>
-            <div className="absolute top-0 flex justify-center rounded-full">
-               <li>xvfdgdg</li>
-               
-            </div>
-            <div className="absolute top-5 left-10 flex justify-center rounded-full">
-               <li>xvfdgdg</li>
-               
-            </div>
+              <div className=" absolute top-[85px] left-16 rotate-45 flex justify-between items-center w-20 lg:w-40">
+                <div className="circleIcon2">
+                  <Image src={circle13} alt="circle" />
+                </div>
+                <div className="circleIcon2">
+                  <Image src={circle5} alt="circle" />
+                </div>
+              </div>
+              <div className="iconWraps2">
+                <div className="circleIcon2">
+                  <Image src={circle3} alt="circle" />
+                </div>
+                <div className="circleIcon2">
+                  <Image src={circle9} alt="circle" />
+                </div>
+              </div>
+
+              {/* <div className="iconWraps2">
+                <div className="circleIcon2">
+                  <Image src={circle6} alt="circle" />
+                </div>
+                <div className="circleIcon2">
+                  <Image src={circle7} alt="circle" />
+                </div>
+              </div> */}
+              <div className="iconWraps3">
+                <div className="circleIcon2">
+                  <Image src={circle11} alt="circle" />
+                </div>
+                <div className="circleIcon2">
+                  <Image src={circle4} alt="circle" />
+                </div>
+              </div>
+              <div className="iconWraps4">
+                <div className="circleIcon2">
+                  <Image src={circle2} alt="circle" />
+                </div>
+                <div className="circleIcon2">
+                  <Image src={circle7} alt="circle" />
+                </div>
+              </div>
+              <div className="circleIcon2 circleIcon3">
+                <Image src={circle12} alt="circle" />
+              </div>
+              {/* top  */}
+              <div className="circleIcon2 circleIcon4">
+                <Image src={circle6} alt="circle" />
+              </div>
+              <div className="circleIcon2 circleIcon5">
+                <Image src={circle10} alt="circle" />
+              </div>
+              <div className="circleIcon2 circleIcon7">
+                <Image src={circle8} alt="circle" />
+              </div>
             </div>
           </div>
         </div>

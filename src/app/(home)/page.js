@@ -1,5 +1,7 @@
 import Banner from "./_components/Banner";
 import BuildingTomorrows from "./_components/BuildingTomorrows";
+import Comprehensive from "./_components/Comprehensive";
+import ComprehensiveForPhone from "./_components/ComprehensiveForPhone";
 import EffectiveWork from "./_components/EffectiveWork";
 import EffectiveWorkForPhone from "./_components/EffectiveWorkForPhone";
 import Empowering from "./_components/Empowering";
@@ -34,7 +36,9 @@ export default function Home() {
       <EffectiveWork />
       <EffectiveWorkForPhone />
       <Remarkable />
-      <Satisfaction/>
+      <Satisfaction />
+      <Comprehensive />
+      <ComprehensiveForPhone/>
     </div>
   );
 }

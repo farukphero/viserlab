@@ -28,11 +28,6 @@ import Link from "next/link";
 
 
 
-
-
-
-
-
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -424,7 +419,7 @@ export function NavBar() {
       }
     >
       <div className="flex items-center justify-between text-blue-gray-900 lg:w-[85%] mx-5 lg:mx-auto">
-        <Image src={logo} alt="logo" className="w-[225px] h-[54px]" />
+       <Link href="/"> <Image src={logo} alt="logo" className="w-[225px] h-[54px]" /></Link>
         <div className="hidden lg:block">
           <NavList />
         </div>

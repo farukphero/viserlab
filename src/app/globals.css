@@ -9,6 +9,93 @@ html,
   height: 100%;
  
 }
+ 
+.circleIcon{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:60px;
+  height:60px;
+  border-radius: 100%;
+  background:white;
+  justify-content: center;
+  align-items: center ;
+  display: flex;
+}
+.circleIcon img{
+
+  width: 70%; height: 100%;
+  height: 70%; 
+  border-radius: 100%;
+  
+
+}
+.iconWraps, .iconWraps2, .iconWraps3, .iconWraps4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  position: absolute;
+  rotate: 57deg;
+  left: 70px;
+  top: 75px;
 
 
+
+}
+.iconWraps2{
+  bottom: -200px;
+  left: 270px;
+}
+.circleIcon2{
+  width:60px;
+  height:60px;
+  border-radius: 100%;
+  background-color:white;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  place-items: center;
+
+}
+.circleIcon2 img{
+  width:90%;
+  height: 90%;
+  border-radius: 100%;
+
+}
+.iconWraps3{
+  right: 0px;
+  top: 320px;
+  rotate: -43deg;
+  left: 50px;
+}
+.iconWraps4{
+  left: 285px;
+  rotate: -41deg;
+  top: 100px;
+}
+
+.circleIcon3{
+  top: 190px;
+  position: absolute;
+  left: 5px;
+}
+.circleIcon4{
+  top: 5px;
+  position: absolute;
+  right: 190px;
+
+}
+.circleIcon5{
+  bottom: 1px;
+  position: absolute;
+  left: 190px;
+}
+.circleIcon7{
+  position: absolute;
+  right: 1px;
+  top: 239px;
+}
  
