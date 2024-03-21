@@ -13,6 +13,7 @@ import card4 from "../../../assets/image/featured image/33821085_cover.jpg";
 
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import { FaStar } from "react-icons/fa6";
+import Link from "next/link";
 
 const FeaturedItems = () => {
   const cards = [
@@ -79,44 +80,46 @@ const FeaturedItems = () => {
       <div className="h-full lg:h-[700px] mt-5 lg:mt-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {cards.map((card) => (
-            <Card key={card.price}>
-              <Image
-                src={card.image}
-                alt="card-image"
-                className="rounded-t-md"
-              />
+            <Link key={card.price} href={`/product/${card.title}`}>
+              <Card >
+                <Image
+                  src={card.image}
+                  alt="card-image"
+                  className="rounded-t-md"
+                />
 
-              <CardBody>
-                <Typography
-                  color="blue-gray"
-                  className="mb-2 text-sm font-bold"
-                >
-                  {card.title}
-                </Typography>
-                <div className="flex justify-between">
-                  <Typography className="flex gap-x-1 text-[#FDB63A] mt-[6px]">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
+                <CardBody>
+                  <Typography
+                    color="blue-gray"
+                    className="mb-2 text-sm font-bold"
+                  >
+                    {card.title}
                   </Typography>
-                  <button className="border px-2 py-[3px] rounded hover:bg-[#0088FF] hover:text-white font-medium duration-700 ease-in-out">
-                    live preview
-                  </button>
-                </div>
-                <div className="border-b-2 py-2"></div>
-                <div className="mt-2 flex justify-between mb-0 pb-0">
-                  <div className="flex items-center gap-x-3 ">
-                    <card.icon className="h-8 w-8 mt-1 bg-red-400/30 text-red-400 p-2 rounded" />
-                    <h1 className="text-red-400 text-sm font-medium">
-                      {card.course}
-                    </h1>
+                  <div className="flex justify-between">
+                    <Typography className="flex gap-x-1 text-[#FDB63A] mt-[6px]">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </Typography>
+                    <button className="border px-2 py-[3px] rounded hover:bg-[#0088FF] hover:text-white font-medium duration-700 ease-in-out">
+                      live preview
+                    </button>
                   </div>
-                  <div className=" font-bold">$ {card.price}</div>
-                </div>
-              </CardBody>
-            </Card>
+                  <div className="border-b-2 py-2"></div>
+                  <div className="mt-2 flex justify-between mb-0 pb-0">
+                    <div className="flex items-center gap-x-3 ">
+                      <card.icon className="h-8 w-8 mt-1 bg-red-400/30 text-red-400 p-2 rounded" />
+                      <h1 className="text-red-400 text-sm font-medium">
+                        {card.course}
+                      </h1>
+                    </div>
+                    <div className=" font-bold">$ {card.price}</div>
+                  </div>
+                </CardBody>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

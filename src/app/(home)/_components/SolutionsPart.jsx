@@ -8,10 +8,12 @@ import domain from "../../../assets/image/featured image/solutions/service-icon4
 import dm from "../../../assets/image/featured image/solutions/service-icon5.svg";
 import tech from "../../../assets/image/featured image/solutions/service-icon6.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const SolutionsPart = () => {
   const cards = [
     {
+      href: "web-application",
       title: "Web Application",
       image: web,
       description:
@@ -19,6 +21,7 @@ const SolutionsPart = () => {
       icon: BsArrowRight,
     },
     {
+      href: "mobile-application",
       title: "Mobile Application",
       image: mobile,
       description:
@@ -26,6 +29,7 @@ const SolutionsPart = () => {
       icon: BsArrowRight,
     },
     {
+      href: "ui-ux-design",
       title: "UI/UX Design",
       image: ui,
       description:
@@ -33,6 +37,7 @@ const SolutionsPart = () => {
       icon: BsArrowRight,
     },
     {
+      href: "domain-hosting",
       title: "Domain & Hosting",
       image: domain,
       description:
@@ -40,6 +45,7 @@ const SolutionsPart = () => {
       icon: BsArrowRight,
     },
     {
+      href: "digital-marketing",
       title: "Digital Marketing",
       image: dm,
       description:
@@ -47,6 +53,7 @@ const SolutionsPart = () => {
       icon: BsArrowRight,
     },
     {
+      href: "tech-consultancy",
       title: "Tech Consultancy",
       image: tech,
       description:
@@ -69,7 +76,11 @@ const SolutionsPart = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-10">
         {cards.map((card) => (
-          <div key={card.title} className="p-5 border">
+          <Link
+            href={`/service/${card.href}`}
+            key={card.title}
+            className="p-5 border"
+          >
             <div className="flex justify-center">
               <Image
                 src={card.image}
@@ -84,7 +95,7 @@ const SolutionsPart = () => {
             <div className="my-8 flex justify-center">
               <card.icon className="h-6 w-6" />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
