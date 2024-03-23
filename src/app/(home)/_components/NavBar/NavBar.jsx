@@ -20,7 +20,12 @@ import {
 import logo from "../../../../assets/image/logo-dark.png";
 import Image from "next/image";
 import { FaArrowRightToBracket } from "react-icons/fa6";
-import { navListMenuItemsForServices } from "./_components/NavListMenuItem";
+import {
+  navListMenuItemsForDM,
+  navListMenuItemsForProducts,
+  navListMenuItemsForServices,
+  navListMenuItemsForWeb,
+} from "./_components/NavListMenuItem";
 import Link from "next/link";
 import { AuthContext } from "@/Contexts/AuthProvider/AuthProvider";
 
@@ -28,8 +33,8 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItemsForServices.map(
-    ({ icon, title, description }, key) => (
-      <Link href="/" key={key}>
+    ({ icon, title, description, href }, key) => (
+      <Link href={`/service/${href}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
           <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
             {" "}
@@ -104,11 +109,13 @@ function NavListMenu() {
 function NavListMenuProducts() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItemsForServices.map(
-    ({ icon, title, description }, key) => (
-      <Link href="/" key={key}>
+  const renderItems = navListMenuItemsForProducts.map(
+    ({ icon, title, description, href }, key) => (
+      <Link href={`/category/${href}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
-          <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
+          <div
+            className={`flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 `}
+          >
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -181,9 +188,9 @@ function NavListMenuProducts() {
 function NavListMenuWeb() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItemsForServices.map(
-    ({ icon, title, description }, key) => (
-      <Link href="/" key={key}>
+  const renderItems = navListMenuItemsForWeb.map(
+    ({ icon, title, description, href }, key) => (
+      <Link href={`/hosting/${href}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">
           <div className="flex items-center justify-center rounded-lg bg-[#0088FF]/10 p-2 ">
             {" "}
@@ -258,7 +265,7 @@ function NavListMenuWeb() {
 function NavListMenuDM() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItemsForServices.map(
+  const renderItems = navListMenuItemsForDM.map(
     ({ icon, title, description }, key) => (
       <Link href="/" key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg lg:w-[250px] lg:h-[100px]">

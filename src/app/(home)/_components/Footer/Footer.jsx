@@ -23,7 +23,7 @@ const Footer = () => {
                 Company
               </p>
               <li>
-                <Link 
+                <Link
                   href="/about"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
@@ -31,28 +31,28 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Contact us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/faq"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/user/login"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Account Login
-                </a>
+                </Link>
               </li>
             </ul>
             <ul>
@@ -60,36 +60,36 @@ const Footer = () => {
                 Digital Marketing
               </p>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/marketing/backlink"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Backlink
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/marketing/press-release"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Press Release
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/marketing/advertising"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Advertising
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/marketing/branding"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Branding
-                </a>
+                </Link>
               </li>
             </ul>
             <ul>
@@ -97,36 +97,36 @@ const Footer = () => {
                 Web Hosting
               </p>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/premium"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Shared Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/vps"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   VPS Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/dedicated"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Dedicated Server
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/cluster"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Server Cluster
-                </a>
+                </Link>
               </li>
             </ul>
             <ul>
@@ -134,36 +134,36 @@ const Footer = () => {
                 More....
               </p>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/domain-registration"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Domain
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/hosting/smtp"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   SMTP
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/products"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Digital Items
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/support"
                   className="block py-1.5 font-sans text-base font-normal leading-relaxed text-gray-400 antialiased transition-colors hover:text-blue-gray-500 hover:underline"
                 >
                   Get Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

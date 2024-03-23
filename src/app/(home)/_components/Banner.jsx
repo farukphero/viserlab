@@ -65,7 +65,7 @@ const Banner = () => {
       </div>
 
       <div className="flex justify-center gap-x-5">
-       <Link href="/product">
+       <Link href="/products">
        <button className="bg-[#0088FF] hover:bg-[#ecf6fe] transition duration-700 ease-in-out hover:text-[#0088FF]  border  border-[#0088FF] py-3 lg:py-4 px-5 lg:px-8 rounded text-white font-medium   flex gap-x-2">
           <span className="text-sm"> EXPLORE US</span>
         </button>
