@@ -20,6 +20,7 @@ import dm from "../../../assets/image/comprehensive/digital_marketing.svg";
 import wordpress from "../../../assets/image/comprehensive/wordpress_plugins.svg";
 import smtp from "../../../assets/image/comprehensive/SMTP_server.svg";
 import branding from "../../../assets/image/comprehensive/branding.svg";
+import Link from "next/link";
 
 const ComprehensiveForPhone = () => {
   const cards = [
@@ -29,6 +30,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Ready-made and custom-built Laravel scripts for efficient web application development.",
       icon: BsArrowRight,
+      href: "/category/php-scripts",
     },
     {
       title: "Mobile Apps",
@@ -36,6 +38,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Ready-made and custom-built mobile apps for iOS and Android platforms.",
       icon: BsArrowRight,
+      href: "/category/mobile-apps",
     },
     {
       title: "UI/UX Design",
@@ -43,6 +46,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Creative and user-centric design solutions for websites and applications.",
       icon: BsArrowRight,
+      href: "/category/html-templates",
     },
     {
       title: "Wordpress Plugins",
@@ -50,6 +54,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Ready-made and custom-built plugins to enhance functionality in WordPress websites.",
       icon: BsArrowRight,
+      href: "/category/wordpress",
     },
     {
       title: "Shared Hosting",
@@ -57,6 +62,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Affordable web hosting solutions for small to medium-sized websites.",
       icon: BsArrowRight,
+      href: "/hosting/premium",
     },
     {
       title: "VPS Hosting",
@@ -64,6 +70,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Scalable and reliable Virtual Private Server hosting for better performance and control.",
       icon: BsArrowRight,
+      href: "/hosting/vps",
     },
     {
       title: "Dedicated Server",
@@ -71,6 +78,7 @@ const ComprehensiveForPhone = () => {
       description:
         "High-performance servers exclusively dedicated to meet specific project requirements.",
       icon: BsArrowRight,
+      href: "/hosting/dedicated",
     },
     {
       title: "SMTP Server",
@@ -78,6 +86,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Secure and efficient server setup for streamlined email communication.",
       icon: BsArrowRight,
+      href: "/hosting/smtp",
     },
     {
       title: "Backlink",
@@ -85,6 +94,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Quality backlink services to improve website visibility and search engine rankings.",
       icon: BsArrowRight,
+      href: "/marketing/backlink",
     },
     {
       title: "Press Release",
@@ -92,6 +102,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Our expert team crafts and strategically distributes press releases to generate widespread publicity and media coverage.",
       icon: BsArrowRight,
+      href: "/marketing/press-release",
     },
     {
       title: "Digital Marketing",
@@ -99,6 +110,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Comprehensive strategies to promote businesses online and increase brand visibility.",
       icon: BsArrowRight,
+      href: "/marketing/advertising",
     },
     {
       title: "Branding",
@@ -106,6 +118,7 @@ const ComprehensiveForPhone = () => {
       description:
         "Secure and efficient server setup for streamlined email communication.",
       icon: BsArrowRight,
+      href: "/marketing/branding",
     },
   ];
   return (
@@ -124,7 +137,7 @@ const ComprehensiveForPhone = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-10">
           {cards.map((card) => (
-            <div key={card.title} className="p-5 border">
+            <Link href={card.href} key={card.title} className="p-5 border">
               <div className="flex justify-center">
                 <Image
                   src={card.image}
@@ -139,7 +152,7 @@ const ComprehensiveForPhone = () => {
               <div className="my-8 flex justify-center">
                 <card.icon className="h-6 w-6" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
